@@ -44,7 +44,7 @@ var petName: String?
  */
 // write your code here
 
-
+petName = "hello"
 
 
 
@@ -55,7 +55,7 @@ var petName: String?
  */
 // write your code here
 
-
+print(petName)
 
 
 
@@ -68,15 +68,20 @@ var petName: String?
 
 
 
-
-
+if petName != nil {
+    print(petName)
+} else {
+    print("There is no pet name.")
+}
 
 
 /*: question7
  ### 7. Use _optional binding_ to unwrap the value of `petName` and print it to the console without all the **Optional(...)** stuff around it.
  */
 // write your code here
-
+if let petName = petName  {
+    print("My friend's pet is \(petName)")
+}
 
 
 
@@ -88,6 +93,11 @@ var petName: String?
  */
 var anotherPetName: String?
 // write your code here
+
+if anotherPetName == nil {
+    print("The value of anotherPetName is nil")
+    
+}
 
 
 
@@ -101,7 +111,11 @@ var anotherPetName: String?
 // write your code here
 
 
-
+if let anotherPetName = anotherPetName {
+    print(anotherPetName)
+} else {
+    print("anotherPetName has no value")
+}
 
 
 
@@ -115,6 +129,9 @@ var anotherPetName: String?
 
 
 
+let newVar: String?
+
+newVar = "New"
 
 
 
@@ -126,7 +143,9 @@ var anotherPetName: String?
  */
 // write your code here
 
+let anotherVar: String?
 
+anotherVar = nil 
 
 
 
